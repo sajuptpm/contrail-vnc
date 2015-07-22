@@ -1,5 +1,6 @@
 <manifest>
 <remote name="github" fetch="https://github.com/Juniper"/>
+<remote name="vpramo" fetch="https://github.com/vpramo"/>
 
 <default revision="R2.1" remote="github"/>
 
@@ -11,7 +12,7 @@
 <project name="contrail-third-party" remote="github" path="third_party"/>
 <project name="contrail-generateDS" remote="github" path="tools/generateds"/>
 <project name="contrail-sandesh" remote="github" path="tools/sandesh"/>
-<project name="contrail-packages" remote="github" path="tools/packages">
+<project name="contrail-packages" revision="R2.1" remote="vpramo" path="tools/packages">
   <copyfile src="packages.make" dest="packages.make"/>
 </project>
 <project name="contrail-nova-vif-driver" remote="github" path="openstack/nova_contrail_vif"/>
