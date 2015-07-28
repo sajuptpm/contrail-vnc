@@ -1,21 +1,27 @@
 <manifest>
 <remote name="github" fetch="https://github.com/Juniper"/>
 <remote name="vpramo" fetch="https://github.com/vpramo"/>
+<remote name="jiocloud" fetch="https://github.com/jiocloud"/>
 
 <default revision="R2.1" remote="github"/>
+<default revision="R2.1" remote="jiocloud"/>
 
 <project name="contrail-build" remote="github" path="tools/build">
   <copyfile src="SConstruct" dest="SConstruct"/>
 </project>
-<project name="contrail-controller" remote="github" path="controller"/>
-<project name="contrail-vrouter" remote="github" path="vrouter"/>
-<project name="contrail-third-party" remote="github" path="third_party"/>
-<project name="contrail-generateDS" remote="github" path="tools/generateds"/>
-<project name="contrail-sandesh" remote="github" path="tools/sandesh"/>
+
+<project name="contrail-controller" remote="jiocloud" path="controller"/>
+<project name="contrail-vrouter" remote="jiocloud" path="vrouter"/>
+<project name="contrail-third-party" remote="jiocloud" path="third_party"/>
+<project name="contrail-generateDS" remote="jiocloud" path="tools/generateds"/>
+<project name="contrail-sandesh" remote="jiocloud" path="tools/sandesh"/>
 <project name="contrail-packages" revision="R2.1" remote="vpramo" path="tools/packages">
   <copyfile src="packages.make" dest="packages.make"/>
 </project>
-<project name="contrail-nova-vif-driver" remote="github" path="openstack/nova_contrail_vif"/>
-<project name="contrail-neutron-plugin" remote="github" path="openstack/neutron_plugin"/>
+<project name="contrail-nova-vif-driver" remote="jiocloud" path="openstack/nova_contrail_vif"/>
+<project name="contrail-neutron-plugin" remote="jiocloud" path="openstack/neutron_plugin"/>
+<project name="contrail-web-controller" remote="jiocloud"/>
+<project name="contrail-web-core" remote="github"/>
+<project name="contrail-webui-third-party" remote="jiocloud" path="contrail-webui-third-party"/>
 
 </manifest>
