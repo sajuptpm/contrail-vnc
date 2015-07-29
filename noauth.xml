@@ -1,8 +1,6 @@
 <manifest>
-<remote name="github" fetch="https://github.com/Juniper"/>
 <remote name="jiocloud" fetch="https://github.com/jiocloud"/>
 
-<default revision="R2.1" remote="github"/>
 <default revision="R2.1" remote="jiocloud"/>
 
 <project name="contrail-build" remote="jiocloud" path="tools/build">
