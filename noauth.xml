@@ -10,7 +10,7 @@
 </project>
 <project name="contrail-controller" remote="sajuptpm" path="controller" revision="R1.10"/>
 <project name="contrail-vrouter" remote="JioCloud" path="vrouter" revision="R1.10"/>
-<project name="contrail-third-party" remote="sajuptpm" path="third_party" revision="R1.10"/>
+<project name="contrail-third-party" remote="JioCloud" path="third_party" revision="R1.10"/>
 <project name="contrail-generateDS" remote="github" path="tools/generateds"/>
 <project name="contrail-sandesh" remote="github" path="tools/sandesh"/>
 <project name="contrail-packages" remote="JioCloud" path="tools/packages" revision="R1.10">
