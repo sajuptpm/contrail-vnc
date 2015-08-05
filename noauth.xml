@@ -7,15 +7,15 @@
 <project name="contrail-build" remote="github" path="tools/build">
   <copyfile src="SConstruct" dest="SConstruct"/>
 </project>
-<project name="contrail-controller" remote="JioCloud" path="controller"/>
-<project name="contrail-vrouter" remote="JioCloud" path="vrouter"/>
-<project name="contrail-third-party" remote="JioCloud" path="third_party"/>
+<project name="contrail-controller" remote="JioCloud" path="controller" revision="R1.10"/>
+<project name="contrail-vrouter" remote="JioCloud" path="vrouter" revision="R1.10"/>
+<project name="contrail-third-party" remote="JioCloud" path="third_party" revision="R1.10"/>
 <project name="contrail-generateDS" remote="github" path="tools/generateds"/>
 <project name="contrail-sandesh" remote="github" path="tools/sandesh"/>
-<project name="contrail-packages" remote="JioCloud" path="tools/packages">
+<project name="contrail-packages" remote="JioCloud" path="tools/packages" revision="R1.10">
   <copyfile src="packages.make" dest="packages.make"/>
 </project>
-<project name="contrail-nova-vif-driver" remote="JioCloud" path="openstack/nova_contrail_vif"/>
+<project name="contrail-nova-vif-driver" remote="JioCloud" path="openstack/nova_contrail_vif" revision="R1.10"/>
 <project name="contrail-neutron-plugin" remote="github" path="openstack/neutron_plugin"/>
 <project name="contrail-web-controller" remote="github"/>
 <project name="contrail-web-core" remote="github"/>
