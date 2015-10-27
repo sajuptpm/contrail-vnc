@@ -1,6 +1,7 @@
 <manifest>
 <remote name="github" fetch=".."/>
-<remote name="sajuptpm" fetch="https://github.com/sajuptpm"/>
+<remote name="sajuptpm" fetch="https://github.com/sajuptpm/"/>
+<remote name="jiocloud" fetch="https://github.com/sajuptpm/"/>
 
 <default revision="R2.1" remote="github"/>
 
@@ -9,7 +10,7 @@
 </project>
 <project name="contrail-controller" remote="sajuptpm" revision="R2.1_debug" path="controller"/>
 <project name="contrail-vrouter" remote="github" path="vrouter"/>
-<project name="contrail-third-party" remote="github" path="third_party"/>
+<project name="contrail-third-party" remote="jiocloud" revision="R2.1_debug" path="third_party"/>
 <project name="contrail-generateDS" remote="github" path="tools/generateds"/>
 <project name="contrail-sandesh" remote="github" path="tools/sandesh"/>
 <project name="contrail-packages" remote="github" path="tools/packages">
