@@ -39,4 +39,7 @@ Virtual Network Controller source code.
                      rev_new="refs\/heads\/"$CONTRAIL_BRANCH 
                     sed -i "s/$rev_original/$rev_new/" .repo/manifest.xml
 
+###Doc
+
+    http://fosshelp.blogspot.in/2015/02/openstack-and-opencontrail-in-separate.html
 
