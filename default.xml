@@ -1,7 +1,7 @@
 <manifest>
 <remote name="github" fetch=".."/>
 <remote name="sajuptpm" fetch="https://github.com/sajuptpm/"/>
-<remote name="jiocloud" fetch="https://github.com/sajuptpm/"/>
+<remote name="jiocloud" fetch="https://github.com/jiocloud/"/>
 
 <default revision="R2.1" remote="github"/>
 
